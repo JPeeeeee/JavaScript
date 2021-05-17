@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: rgb(75, 204, 243);
+            color: rgb(255, 255, 255);
+        }
+        h1{
+            text-align: center;
+            font-size: 5rem;
+            font-family: arial;
+        }
+        p{
+            text-align: center;
+            font-size: 2.3rem;
+            font-family: Arial;
+            color: rgb(253, 202, 184);
+        }
+    </style>
+    <title>Estudos de DOM</title>
+</head>
+<body>
+    <h1>Estudos de DOM</h1>
+    <p>Eis o <strong>resultado</strong></p>
+    <div id="msg">clique em mim</div>
+    <script>
+        var d = window.document.querySelector("body")
+        d.style.backgroundColor = "black"
+    </script>
+</body>
+</html>

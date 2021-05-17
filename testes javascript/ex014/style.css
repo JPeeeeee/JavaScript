@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(background.jpg);
+    background-position: 50% 0%;
+    background-repeat: no-repeat;
+    background-color: black;
+    color: white;
+}
+h1{
+    position: absolute;
+    font: bold 50px "Poppins", sans-serif;
+    top: 7%;
+}
+.area{
+    position: absolute;
+    background: white;
+    height: 400px;
+    width: auto;
+    top: 25%;
+    padding: 40px;
+    color: black;
+    font: bold 20px "Poppins", sans-serif;
+    border-radius: 20px;
+    box-shadow: black 5px 5px 20px;
+    display: flex;
+    justify-content: center;
+}
+input#num-tabuada{
+    height: 40px;
+    text-align: center;
+    font-size: 25px;
+    width: 150px;
+}
+input#submit{
+    position: absolute;
+    top: 20%;
+    height: 40px;
+    width: 70px;
+    cursor: pointer;
+}
+.display{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 35%;
+    left: 35%
+}
+
+

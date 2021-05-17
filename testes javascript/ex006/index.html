@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com DOM 1.2 (somando)</title>
+    <style>
+        h1{
+            font: normal 30pt arial;
+        }
+        body{
+            text-align: center;
+        }
+
+        input#txt1{
+            width: 100px;
+            height: 50px;
+        }
+        
+        input#txt2{
+            width: 100px;
+            height: 50px;
+        }
+
+        input#but{
+            width: 50px;
+            height: 30px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>calculadora de Somakkkkk</h1>
+    <div>
+        <input type="number" name="txt1" id="txt1" placeholder="ex. 1"> + 
+        <input type="number" name="txt2" id="txt2" placeholder="ex. 1">
+        <input type="button" value="somar" onclick="somar()" id="but">
+    </div>
+    <p id="paragrafo"></p>
+    <script>
+        function somar(){
+            var a = Number(document.getElementById("txt1").value)
+            var b = Number(document.getElementById("txt2").value)
+            var p = document.getElementById("paragrafo")
+
+            p.innerText = `A soma entre ${a} e ${b} é ${a + b}` 
+
+            if(a == "" || b == ""){
+                p.innerText = `Adicione um número em uma das caixas acima!`
+            }
+        }
+    </script>
+</body>
+</html>

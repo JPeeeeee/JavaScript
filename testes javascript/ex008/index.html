@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            color: black;
+            background-color: #fdfd96;
+            text-align: center;
+        }
+
+        .radar{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            background-color: #20b2aa;
+            margin: auto;
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+
+        }
+
+        .p{
+            flex: 1;
+            font: normal 40px arial;
+            text-align: center;
+        }
+
+        .inp{
+            flex: 1;
+            margin: auto;
+            height: 400px;
+        }
+
+        .but{
+            flex: 1;
+        }
+
+        p#resultado{
+            font: bold 20px arial;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Radar de velocidade >:)</h1>
+    <div class="radar">
+        <div class="p">
+            <p id="pradar">Digite a sua velocidade abaixo</p>
+        </div>
+        <div class="inp">
+            <input type="text" name="velocidade" id="vel">
+        </div>
+        <div class="but">
+            <button id="button" onclick="radar()">Enviar</button>
+        </div>
+    </div>
+    <p id="resultado"></p>
+    <p id="limitedevel"></p>
+    
+    <script>
+        function radar(){
+        var vel = Number(document.querySelector("input#vel").value)
+        var limite = 80
+        
+        if(vel > limite){
+            document.querySelector("p#limitedevel").innerHTML = "<strong>O limite de velocidade nessa rodovia é 80 Km/h!</strong>"
+            
+            document.querySelector("p#resultado").innerText = "Você ultrapassou o limite de velocidade! Multado!"
+        }
+        
+        else{
+            document.querySelector("p#resultado").innerText = "Parabéns! Você está dentro do limite de velocidade! Continue assim."   
+
+            document.querySelector("p#limitedevel").innerText = ""
+        }
+        
+    }
+    </script>
+</body>
+</html>

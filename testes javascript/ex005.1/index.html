@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: cornflowerblue;
+            color: white;
+        }
+        div.texto{
+            font: normal 20pt arial;
+            background-color: green;
+            color: white;
+            width: 200px;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            border-radius: 20px;
+        }
+    </style>
+    <title>Dom.1</title>
+</head>
+<body>
+    <h1>Exercícios com o DOM 1.1</h1>
+    <p>Simbora!</p>
+    <div class="texto" onclick="clickondiv()" onmouseenter="entrar()" onmouseout="sair()">interaja...</div>
+    <script>
+        var div = document.getElementsByClassName("texto")[0]
+
+        div.addEventListener("click", clickondiv)
+        div.addEventListener("mouseenter", entrar)
+        div.addEventListener("mouseout", sair)
+
+
+        function clickondiv(){
+            var a = document.getElementsByClassName("texto")[0]
+
+            a.innerText = "Clicou!"
+            a.style.background = "red"
+        }
+
+        function entrar(){
+            var aE = document.getElementsByClassName("texto")[0]
+
+            aE.innerText = "Clica!"
+        }
+
+        function sair(){
+            var aS = document.getElementsByClassName("texto")[0]
+
+            aS.innerText = "interaja..."
+            aS.style.background = "green"
+        }
+    </script>
+</body>
+</html>
