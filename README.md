@@ -1,3 +1,3 @@
-### Os primeiros passos
+# Os primeiros passos
 
-# Estes testes com JavaScript foram responsáveis por 
+### Estes testes com JavaScript foram responsáveis por 
