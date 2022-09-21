@@ -1,3 +1,3 @@
 # Os primeiros passos
 
-### Estes testes com JavaScript foram responsáveis por 
+### Este foi o primeiro contato que eu tive com uma linguagem de programação.
